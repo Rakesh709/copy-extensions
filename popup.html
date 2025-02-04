@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Saver</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px 20px; width: 400px; }
+
+        #textInput {
+            width: 100%;
+            height: 40px;
+            border-radius: 7px;
+        }
+        
+        #addButton {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(60, 219, 83);
+            border: 2px solid #ffff;
+            margin-top: 4px;
+            width: 100%;
+            color: #fff;
+        }
+
+        .text-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .copy-btn, .remove-btn {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: auto;
+            color: #fff;
+        }
+
+        .copy-btn {
+            background-color: rgb(232, 229, 45);
+            border: 2px solid #ffff;
+        }
+
+        .copied {
+            background-color: green;
+            color: white;
+        }
+
+        .remove-btn {
+            background-color: rgb(232, 54, 45);
+            border: 2px solid #ffff;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Enter Your Text">
+    <button id="addButton">Add</button>
+    <ul id="textList"></ul>
+    <script src="popup.js"></script>
+</body>
+</html>

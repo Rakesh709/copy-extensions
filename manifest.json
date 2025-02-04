@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Text Saver",
+    "version": "2.0",
+    "description": "Save text, copy, and remove items with persistence.",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html"
+      
+    }
+  }
